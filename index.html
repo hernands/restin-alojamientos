@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/043647ae19.js" crossorigin="anonymous"></script>
+    <!-- Fin Font awesome -->
+    <!-- Inicio Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- Fin Google fonts -->
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Restin Salta - Inicio</title>
+</head>
+<body>
+    <!-- Header -->
+    <header class="headerIndex">
+        <div class="flexHeader">
+            <div class="logoContainer">
+                <!-- Logo -->
+                <a href="./index.html"><img src="./img/restin-logo-blanco.png" class="logo" alt="Logo"></a>
+            </div>
+            <div>
+                <!-- Menú -->
+                <nav>
+                    <ul class="menu">
+                        <li><a href="./index.html">Inicio</a></li>
+                        <li><a href="./pages/quienes-somos.html">Quiénes somos</a></li>
+                        <li><a href="./pages/alojamientos.html">Alojamientos disponibles</a></li>
+                        <li><a href="./pages/publicar-propiedad.html">Sumá tu alojamiento</a></li>
+                        <li><a href="./pages/contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+                <!-- Seccion 1 - Presentacion -->
+        <section class="bloqueContenido">
+            <div>
+                <h1>Bienvenido a Salta, <br>Bienvenido a Restin.</h1>
+            </div>
+            <div>
+                <form class="formularioIndex" action="">
+                    <h3>Consultar disponibilidad</h3>
+                    <label for="nombre">Nombre y apellido</label>
+                    <input type="text" name="nombre" id="nombre">
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" name="email" id="email">
+                    <label for="checkin">Fecha de ingreso</label>
+                    <input type="date" name="checkin" id="checkin">
+                    <label for="checkout">Fecha de salida</label>
+                    <input type="date" name="checkout" id="checkout">
+                    <label for="huespedes">Cantidad de huéspedes</label>
+                    <input type="number" name="huespedes" id="huespedes">
+                    <button class="botonFormularios botonGlobal" type="submit">Recibir una oferta a mi medida</button>
+                </form>
+            </div>
+        </section>
+    </header>
+
+    <main>
+
+        <!-- Seccion 2 - Descripcion breve -->
+        <section class="seccionIndex section">
+            
+            <div class="sectionContainer">
+                <div class="setionContainerItem"> 
+                    <h2>¿Qué es Restin?</h2>
+                    <p class="parrafoSeccion">Somos una red de hospedajes diversa y en permanente expansión en la ciudad de Salta, Argentina. Estamos en una búsqueda constante por acercarte eso que necesitás en materia de alojamientos. <strong>Seas viajero o propietario, dejalo en manos de Restin. Nosotros nos encargamos.</strong></p>
+                    <a href="./pages/quienes-somos.html" class="botonGlobal">Ver más...</a>
+                </div>
+                <div class="indexImgContainer setionContainerItem">
+                    <img src="./img/undraw_location_review_dmxd.png" alt="ilustración">
+                </div>
+            </div>
+        </section>
+        <!-- Seccion 3 - Estadisticas -->
+        <section class="seccionContador section">
+            <h2>Los números nos avalan</h2>
+            <ul>
+                <li>
+                    <p class="counter">50+</p>
+                    <p class="counterInfo">plazas totales</p>
+                </li>
+                <li>
+                    <p class="counter">4</p>
+                    <p class="counterInfo">ubicaciones diferentes</p>
+                </li>
+                <li>
+                    <p class="counter">5+</p>
+                    <p class="counterInfo">años de experiencia</p>
+                </li>
+            </ul>
+        </section>
+        <!-- Seccion 4 - Info adicional y call to action   -->
+        <section class="seccionIndex section">
+            <div class="sectionContainer">
+                    <div class="indexImgContainer setionContainerItem">
+                        <!-- Mapa o imagen de las distintas ubicaciones -->
+                        <img src="./img/undraw_tourist_map_re_293e.png" alt="mapa">
+                    </div>
+                    <div id="propuestasIndex" class="setionContainerItem">
+                        <h2>Una propuesta para cada necesidad</h2>
+                        <p class="parrafoSeccion"> Lo nuestro es la excelencia en servicios de hospitalidad. Nuestra misión es encontrar siempre la pareja perfecta: para un viajero, cada visita a Salta es una experiencia única, y a su vez estamos convencidos de que cada alojamiento tiene algo único que ofrecer para hacer de esa experiencia algo inolvidable. <strong>Animate a conocernos.</strong></p>
+                        <a href="./pages/publicar-propiedad.html" class="botonGlobal">Soy propietario</a>
+                        <a href="./pages/alojamientos.html" class="botonGlobal">Soy viajero</a>                     
+                    </div>     
+            </div>
+        </section>
+
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="flexFooter">
+            <div class="logoContainer">
+                <a href="./index.html"><img class="logo" src="./img/restin-logo-blanco.png" alt="logo footer"></a>
+            </div>
+            <div class="footerSocial">
+                <h3>Encontranos en:</h3>
+                <!-- Iconos redes sociales -->
+                <ul>
+                    <li><a href="https://instagram.com/restinsalta" target="blank"><i class="socialIcon fa-brands fa-instagram"></i></a></li>
+                    <li><a href="https://facebook.com/restinsalta" target="blank"><i class="socialIcon fa-brands fa-facebook"></i></a></li>
+                    <li><a href="mailto:restinsalta@gmail.com" target="blank"><i class="socialIcon fa-solid fa-envelope"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <p class="copyright">Restin Salta. Todos los derechos reservados (2022)</p>
+        </div>
+        
+    </footer>
+
+</body>
+</html>

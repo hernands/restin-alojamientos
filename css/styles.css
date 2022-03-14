@@ -1,0 +1,611 @@
+/* 
+////////////// COLORES GLOBALES DEL PROYECTO ////////////
+
+BLANCO: #FFF
+AMARILLO: #ffdd18
+AMARILLO HOVER: #d0ac00
+GRIS TEXTO: #555
+GRIS CLARO: #aaa
+FONDO SECCIONES ESPECIALES: #222
+
+*/
+
+/* Reset CSS */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos globales (header, footer, tipografía, botones, etc.) */
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  color: #555;
+}
+
+/* Estilos globales>>>Titulos */
+
+h1 {
+  font-size: 4rem;
+  margin: 3rem 0;
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin: 2rem 0;
+}
+
+.containerH1 {
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Estilos globales>>>Botones y Formularios */
+.botonGlobal {
+  display: inline-block;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  background-color: #ffdd18;
+  color: #555;
+  border-radius: 5px;
+  border: 0;
+  cursor: pointer;
+  padding: 15px 20px;
+  text-decoration: none;
+}
+
+.botonFormularios {
+  margin-top: 1rem;
+}
+
+.formularioFullWidth {
+  display: inline-block;
+  max-width: 80%;
+}
+.formularioFullWidth label,
+.formularioFullWidth input,
+.formularioFullWidth textarea,
+.formularioFullWidth select,
+.formularioFullWidth option {
+  display: block;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.formularioFullWidth label,
+.formularioFullWidth input,
+.formularioFullWidth select,
+.formularioFullWidth option {
+  height: 3rem;
+  text-transform: uppercase;
+}
+
+.formularioFullWidth label {
+  margin-top: 2rem;
+}
+
+.formularioFullWidth input {
+  margin-bottom: 1rem;
+}
+
+.formularioFullWidth h2 {
+  margin-bottom: 4rem;
+}
+
+.formularioFullWidth select {
+  text-indent: 45%;
+}
+
+.formularioFullWidth button {
+  background-color: #222;
+  color: #fff;
+  margin: 3rem 0;
+  display: block;
+  width: 100%;
+}
+
+/* Estilos globales >>> Secciones */
+.section {
+  padding: 3rem;
+}
+
+.fullWidthSection {
+  background-color: #ffdd18;
+  text-align: center;
+}
+
+.textoCentrado {
+  text-align: center;
+}
+
+/* Fin de Estilos globales */
+
+/* Estilos Header */
+.flexHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.headerIndex {
+  background-image: url(../img/salta-bg3-overlay.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fff;
+  height: 100vh;
+  padding: 4rem;
+  padding-top: 1rem;
+}
+
+.headerPaginas {
+  background-image: url(../img/salta-background2-overlay-edit.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fff;
+  height: 70vh;
+  padding: 4rem;
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.headerPaginas h1 {
+  text-align: center;
+}
+
+.logo {
+  width: 100%;
+  height: 100%;
+}
+
+.logoContainer {
+  width: 150px;
+  height: 150px;
+  display: inline-block;
+}
+
+/* Estilos de Header >>> Menu de navegacion  */
+
+.menu {
+  list-style: none;
+}
+
+.menu li {
+  display: inline;
+  margin: 0.5rem;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Fin de estilos de Header */
+
+/* Estilos FOOTER */
+footer {
+  background-color: #222;
+  color: #fff;
+  padding: 3rem;
+}
+
+.footerSocial {
+  text-align: right;
+}
+
+footer ul {
+  margin-top: 2rem;
+}
+
+footer ul li {
+  display: inline;
+  margin-right: 0.5rem;
+}
+
+footer ul li a {
+  color: #fff;
+}
+
+.flexFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.socialIcon {
+  font-size: 1.3rem;
+}
+
+.copyright {
+  text-align: center;
+  font-weight: 300;
+}
+/* Fin de estilos FOOTER */
+
+/* Estilos de index.html */
+
+.bloqueContenido {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 80%;
+}
+
+.sectionContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.seccionIndex .botonGlobal {
+  margin: 1rem 0;
+}
+
+.seccionContador {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+}
+
+.seccionContador ul {
+  list-style: none;
+}
+
+.seccionContador ul li {
+  display: inline-block;
+  margin: 1.5rem;
+}
+
+.counter {
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.indexImgContainer {
+  width: 30vw;
+  margin: 0;
+}
+
+.indexImgContainer img {
+  width: 100%;
+}
+
+.setionContainerItem {
+  max-width: 40%;
+}
+/* .parrafoSeccion {
+  max-width: 550px;
+} */
+
+.formularioIndex {
+  display: inline-block;
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 5px;
+}
+.formularioIndex h3 {
+  margin-bottom: 1rem;
+}
+
+.formularioIndex label,
+.formularioIndex input {
+  display: block;
+  width: 100%;
+}
+
+.formularioIndex label {
+  margin-top: 1rem;
+}
+
+.formularioIndex input {
+  margin-bottom: 0.3rem;
+}
+
+#propuestasIndex {
+  text-align: right;
+}
+
+/* Fin de estilos de index.html */
+
+/* Estilos de páginas internas */
+
+/* Estilos páginas internas >>> "quienes somos" */
+
+#contenedorQuienesSomos {
+  width: 1100px;
+  max-width: 70%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#contenedorQuienesSomos .botonGlobal {
+  width: 300px;
+  margin: 1.5rem auto;
+}
+
+#parrafoQuienesSomos {
+  font-size: 1.3rem;
+  display: block;
+  text-align: center;
+  margin: 1rem auto;
+}
+
+#saltaPanoramica {
+  display: block;
+  margin: 3rem auto;
+  width: 100%;
+}
+
+/* Estilos de páginas internas >>> Alojamientos */
+
+.contenedorTarjetas {
+  display: grid;
+  max-width: 100%;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+}
+
+.tarjetaAlojamiento {
+  background-color: #222;
+  color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  margin: 1rem;
+}
+
+.tituloTarjeta {
+  margin-top: 1rem;
+}
+
+.listaTarjeta {
+  text-align: left;
+  padding: 1rem 3rem;
+}
+
+.imagenTarjeta {
+  display: block;
+  width: 100%;
+  height: 40%;
+  object-fit: cover;
+}
+
+.botonTarjeta {
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+}
+
+/*  Estilos de páginas internas - Sumá tu alojamiento */
+
+.containerServicios {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.fichaServicio {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 25vw;
+  min-height: 70vh;
+  margin: 1rem;
+  padding: 2rem;
+  border: 2px solid #ffdd18;
+  border-radius: 10px;
+}
+
+.fichaServicio img {
+  display: block;
+  width: 100%;
+}
+
+/* Estilos de páginas internas - Contacto */
+
+.containerContacto {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.columnaContacto {
+  padding: 0 3rem;
+}
+
+#contactChannels {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.listaContacto {
+  list-style: none;
+}
+
+.listaContacto li {
+  margin-bottom: 5rem;
+}
+
+.listaContacto a {
+  color: #555;
+  margin-left: 15px;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.listaContacto i {
+  color: #ffdd18;
+  font-size: 1.5rem;
+}
+
+.listaIconos {
+  list-style: none;
+  margin-top: 3rem;
+}
+
+.listaIconos li {
+  display: inline;
+}
+
+.listaIconos li a {
+  color: #222;
+  font-size: 2rem;
+  margin-right: 30px;
+}
+
+.formularioContacto {
+  display: block;
+  padding: 2rem;
+  background-color: #222;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.formularioContacto label,
+.formularioContacto input,
+.formularioContacto button,
+.formularioContacto textarea {
+  display: block;
+  width: 100%;
+}
+
+.formularioContacto label {
+  margin-top: 1rem;
+}
+
+.formularioContacto input {
+  margin-bottom: 0.3rem;
+}
+
+/*  Fin de estilos de páginas internas */
+
+/* RESPONSIVE - MEDIA QUERIES */
+
+/* TABLET */
+
+@media screen and (max-width: 1024px) {
+  /* GLOBAL */
+  .flexHeader {
+    flex-direction: column;
+  }
+
+  .menu {
+    text-align: center;
+  }
+
+  .headerIndex {
+    height: auto;
+  }
+
+  .bloqueContenido {
+    margin-top: 4rem;
+  }
+
+  h1 {
+    font-size: 3rem;
+    padding: 2rem;
+  }
+
+  /* INDEX */
+  .seccionContador ul {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .seccionContador ul li {
+    display: inline-block;
+  }
+
+  /* ALOJAMIENTOS DISPONIBLES */
+  .contenedorTarjetas {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  /* SUMA TU ALOJAMIENTO */
+  .containerServicios {
+    flex-direction: column;
+  }
+  .fichaServicio {
+    width: 80%;
+    justify-content: space-evenly;
+    text-align: center;
+  }
+
+  /* CONTACTO */
+  .containerContacto {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .columnaContacto {
+    padding: 0;
+  }
+}
+
+/* MOVIL */
+
+@media screen and (max-width: 600px) {
+  /* GLOBAL */
+  h1 {
+    text-align: center;
+  }
+
+  .bloqueContenido {
+    flex-direction: column;
+    margin-top: 0;
+  }
+
+  .flexFooter {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footerSocial {
+    text-align: center;
+  }
+  .footerSocial ul {
+    margin-top: 1rem;
+  }
+
+  .copyright {
+    margin-top: 1rem;
+  }
+
+  /* INDEX */
+  .sectionContainer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .setionContainerItem,
+  .indexImgContainer,
+  .indexImgContainer img {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  #propuestasIndex {
+    text-align: center;
+  }
+
+  /* ALOJAMIENTOS */
+  .contenedorTarjetas {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+}
