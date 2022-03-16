@@ -236,6 +236,12 @@ h2 {
   width: 100%;
 }
 
+/* Personalizacion boton hamburguesa Bootstrap */
+.navbar-toggler {
+  font-size: 1.8rem;
+  border: none;
+}
+
 /* Fin de estilos de Header */
 
 /* Estilos FOOTER */
