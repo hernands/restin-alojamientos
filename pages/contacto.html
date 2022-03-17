@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/styles.css">
     <!-- Font awesome -->
     <script src="https://kit.fontawesome.com/043647ae19.js" crossorigin="anonymous"></script>
     <!-- Fin Font awesome -->
@@ -13,29 +12,38 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;700&display=swap" rel="stylesheet">
     <!-- Fin Google fonts -->
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Hoja de estilos propia -->
+    <link rel="stylesheet" href="../css/styles.css">
     <title>Restin Salta - Contacto</title>
 </head>
 <body>
     <!-- Header -->
     <header class="headerPaginas">
-        <div class="flexHeader">
+        <!-- Bootstrap Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+                <div class="logoContainer">
                     <!-- Logo -->
-            <div class="logoContainer">
-                <a href="../index.html"><img src="../img/restin-logo-blanco.png" class="logo" alt="Logo"></a>
-            </div>
-            <div>
-                <!-- Menú -->
-                <nav class="menu">
-                    <ul>
+                    <a href="./index.html"><img src="../img/restin-logo-blanco.png" class="logo" alt="Logo"></a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ms-auto menu">
+
                         <li><a href="../index.html">Inicio</a></li>
                         <li><a href="./quienes-somos.html">Quiénes somos</a></li>
                         <li><a href="./alojamientos.html">Alojamientos disponibles</a></li>
                         <li><a href="./publicar-propiedad.html">Sumá tu alojamiento</a></li>
                         <li><a href="./contacto.html">Contacto</a></li>
+
                     </ul>
-                </nav>
+                </div>
             </div>
-        </div>
+        </nav>   
 
         <div class="containerH1">
             <h1>Contacto</h1>
@@ -44,46 +52,52 @@
     <main>
 
         <section class="section">
-            <div class="containerContacto">
-                <div class="columnaContacto" id="contactChannels">
-                    <h2>Encontranos en</h2>
-                    <ul class="listaContacto">
-                        <li>
-                            <i class="fa-solid fa-phone"></i>
-                            <a href="tel:3875678215">+54 9 387 567 8215</a>
-                        </li>
-                        <li>
-                            <i class="fa-solid fa-envelope"></i>
-                            <a href="mailto:restin.salta@gmail.com">restin.salta@gmail.com</a>
-                        </li>
-                    </ul>
-                    <ul class="listaIconos">
-                        <li>
-                            <a href="https://wa.me/5493875678215" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://facebook.com/restin.salta.3" target="_blank"><i class="fa-brands fa-facebook-square"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://instagram.com/restin.salta" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                        </li>
-                    </ul>
-        
-                </div>
-                <div class="columnaContacto">
-                    <h2>O dejanos tu consulta</h2>
-                    <form class="formularioContacto" action="">
-                    
-                        <label for="nombre">Nombre y apellido</label>
-                        <input type="text" name="nombre" id="nombre">
-                        <label for="email">Correo electrónico</label>
-                        <input type="email" name="email" id="email">
-                        <label for="asunto">Asunto</label>
-                        <input type="text" name="asunto" id="asunto">
-                        <label for="consulta">Su mensaje</label>
-                        <textarea name="consulta" id="consulta" cols="30" rows="10"></textarea>
-                        <button type="submit" class="botonFormularios botonGlobal">Enviar consulta</button>
-                    </form>
+
+            <div class="container mb-5">
+                <div class="row text-center text-lg-start">
+                    <!-- Columna izquierda -->
+                    <div class="col-12 col-lg-6">
+                        <h2>Encontranos en</h2>
+                        <div class="d-flex flex-column h-100 justify-content-lg-around">
+                            <ul class="listaContacto">
+                                <li>
+                                    <i class="fa-solid fa-phone"></i>
+                                    <a href="tel:3875678215">+54 9 387 567 8215</a>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-envelope"></i>
+                                    <a href="mailto:restin.salta@gmail.com">restin.salta@gmail.com</a>
+                                </li>
+                            </ul>
+                            <ul class="listaIconos">
+                                <li>
+                                    <a href="https://wa.me/5493875678215" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                                </li>
+                                <li>
+                                    <a href="https://facebook.com/restin.salta.3" target="_blank"><i class="fa-brands fa-facebook-square"></i></a>
+                                </li>
+                                <li>
+                                    <a href="https://instagram.com/restin.salta" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Columna derecha -->
+                    <div class="col-12 col-lg-6">
+                        <h2>O dejanos tu consulta</h2>
+                        <form class="formularioContacto mx-auto ms-lg-0 me-lg-5" action="">
+                        
+                            <label for="nombre">Nombre y apellido</label>
+                            <input type="text" name="nombre" id="nombre">
+                            <label for="email">Correo electrónico</label>
+                            <input type="email" name="email" id="email">
+                            <label for="asunto">Asunto</label>
+                            <input type="text" name="asunto" id="asunto">
+                            <label for="consulta">Su mensaje</label>
+                            <textarea name="consulta" id="consulta" cols="30" rows="10"></textarea>
+                            <button type="submit" class="botonFormularios botonGlobal">Enviar consulta</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </section>
@@ -110,6 +124,7 @@
         </div>
         
     </footer>
-
+    <!-- Script de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>   
 </body>
 </html>
