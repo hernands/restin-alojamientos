@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/styles.css">
     <!-- Font awesome -->
     <script src="https://kit.fontawesome.com/043647ae19.js" crossorigin="anonymous"></script>
     <!-- Fin Font awesome -->
@@ -13,29 +12,38 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;700&display=swap" rel="stylesheet">
     <!-- Fin Google fonts -->
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Hoja de estilos propia -->
+    <link rel="stylesheet" href="../css/styles.css">
     <title>Restin Salta - Sumate a Restin</title>
 </head>
 <body>
     <!-- Header -->
     <header class="headerPaginas">
-        <div class="flexHeader">
+        <!-- Bootstrap Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+                <div class="logoContainer">
                     <!-- Logo -->
-            <div class="logoContainer">
-                <a href="../index.html"><img src="../img/restin-logo-blanco.png" class="logo" alt="Logo"></a>
-            </div>
-            <div>
-                <!-- Menú -->
-                <nav class="menu">
-                    <ul>
+                    <a href="./index.html"><img src="../img/restin-logo-blanco.png" class="logo" alt="Logo"></a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ms-auto menu">
+
                         <li><a href="../index.html">Inicio</a></li>
                         <li><a href="./quienes-somos.html">Quiénes somos</a></li>
                         <li><a href="./alojamientos.html">Alojamientos disponibles</a></li>
                         <li><a href="./publicar-propiedad.html">Sumá tu alojamiento</a></li>
                         <li><a href="./contacto.html">Contacto</a></li>
+
                     </ul>
-                </nav>
+                </div>
             </div>
-        </div>
+        </nav>    
 
         <div class="containerH1">
             <h1>Publicá tu propiedad</h1>
@@ -45,27 +53,37 @@
     <main>
         <section class="section">
             <h2 class="textoCentrado">Tenemos la solución</h2>
-            <div class="containerServicios">
-                <article class="fichaServicio">
-                    <img src="../img/undraw_House_searching_re_stk8.png" alt="imagen consultoría">
-                    <h3>Plan Consulting</h3>
-                    <p>Sabemos que dar los primeros pasos puede ser un gran desafío. Por suerte, estamos para ayudarte. </p>
-                    <p>En Restin nos encargamos de guiarte a través de todos los preparativos que implican comenzar a brindar un servicio de alojamiento. Desde la configuración de los portales y páginas de reservas online, hasta la organización de las tareas diarias y gestiones legales. Queremos que empieces con el pie derecho para obtener los mejores resultados.</p>
-                </article>
-                <article class="fichaServicio">
-                    <img src="../img/undraw_Departing_re_mlq3.png" alt="imagen comisionables">
-                    <h3>Plan Comisionable</h3>
-                    <p>Mantener contentos a nuestros huéspedes es una tarea diaria que requiere atención en cada detalle. Si bien es una tarea gratificante, a veces es fácil terminar descuidando aspectos tan importantes como las propias ventas o porcentajes de ocupación.</p>
-                    <p>Por eso ideamos el Plan Comisionable, donde el propietario está a cargo de la hospitalidad, y nosotros contribuimos a mantener un caudal óptimo de reservas para lograr la mayor rentabilidad. </p>
-                </article>
-                <article class="fichaServicio">
-                    <img src="../img/undraw_Building_re_xfcm.png" alt="imagen administración">
-                    <h3>Plan Management</h3>
-                    <p> Ya sea por cuestiones de tiempo, tranquilidad o incluso salud, a veces es mejor dejar todo en manos de expertos. </p>
-                    <p>Una vez que hacemos una evaluación del alojamiento y se trazan los objetivos a lograr, alcanzamos al propietario una propuesta personalizada que asegurará el beneficio de ambas partes.</p>
-                    <p>De eso se trata nuestro Plan Management.</p>
-                </article>
+
+            <div class="container-fluid my-5">
+                <div class="row gy-5">
+                    <div class="col-12 col-lg-4">
+                        <article class="fichaServicio mx-auto h-100">
+                            <img src="../img/undraw_House_searching_re_stk8.png" alt="imagen consultoría">
+                            <h3>Plan Consulting</h3>
+                            <p>Sabemos que dar los primeros pasos puede ser un gran desafío. Por suerte, estamos para ayudarte. </p>
+                            <p>En Restin nos encargamos de guiarte a través de todos los preparativos que implican comenzar a brindar un servicio de alojamiento. Desde la configuración de los portales y páginas de reservas online, hasta la organización de las tareas diarias y gestiones legales. Queremos que empieces con el pie derecho para obtener los mejores resultados.</p>
+                        </article>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <article class="fichaServicio mx-auto h-100">
+                            <img src="../img/undraw_Departing_re_mlq3.png" alt="imagen comisionables">
+                            <h3>Plan Comisionable</h3>
+                            <p>Mantener contentos a nuestros huéspedes es una tarea diaria que requiere atención en cada detalle. Si bien es una tarea gratificante, a veces es fácil terminar descuidando aspectos tan importantes como las propias ventas o porcentajes de ocupación.</p>
+                            <p>Por eso ideamos el Plan Comisionable, donde el propietario está a cargo de la hospitalidad, y nosotros contribuimos a mantener un caudal óptimo de reservas para lograr la mayor rentabilidad. </p>
+                        </article>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <article class="fichaServicio mx-auto h-100">
+                            <img src="../img/undraw_Building_re_xfcm.png" alt="imagen administración">
+                            <h3>Plan Management</h3>
+                            <p> Ya sea por cuestiones de tiempo, tranquilidad o incluso salud, a veces es mejor dejar todo en manos de expertos. </p>
+                            <p>Una vez que hacemos una evaluación del alojamiento y se trazan los objetivos a lograr, alcanzamos al propietario una propuesta personalizada que asegurará el beneficio de ambas partes.</p>
+                            <p>De eso se trata nuestro Plan Management.</p>
+                        </article>
+                    </div>
+                </div>
             </div>
+
         </section>
         <section class="fullWidthSection section">
             
@@ -110,6 +128,7 @@
         </div>
         
     </footer>
-
+    <!-- Script de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>   
 </body>
 </html>
