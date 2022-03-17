@@ -63,6 +63,7 @@ h2 {
 
 .botonGlobal:hover {
   background-color: #d0ac00;
+  color: #555;
 }
 
 .botonFormularios {
@@ -441,11 +442,16 @@ footer ul li a {
 .tarjetaAlojamiento {
   background-color: #222;
   color: #fff;
+  border: none;
   border-radius: 10px;
   overflow: hidden;
   text-align: center;
   margin: 1rem;
   transition: ease 0.3s;
+}
+
+.tarjetaAlojamiento h5 {
+  font-weight: bold;
 }
 
 .tituloTarjeta {
@@ -454,7 +460,6 @@ footer ul li a {
 
 .listaTarjeta {
   text-align: left;
-  padding: 1rem 3rem;
 }
 
 .imagenTarjeta {
@@ -465,8 +470,12 @@ footer ul li a {
 }
 
 .botonTarjeta {
-  margin-bottom: 2rem;
-  margin-top: 1rem;
+  padding: 0.8rem;
+}
+
+/* Personalizando Estilos de tarjeta Bootstrap */
+.accordion-header {
+  margin: 0;
 }
 
 /*  Estilos de páginas internas - Sumá tu alojamiento */
