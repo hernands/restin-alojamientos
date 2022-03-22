@@ -14,6 +14,8 @@
     <!-- Fin Google fonts -->
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Estilos Libreria Animate on Scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Hoja de estilos propia -->
     <link rel="stylesheet" href="./css/styles.css">
     <title>Restin Salta - Inicio</title>
@@ -78,12 +80,12 @@
         <section class="seccionIndex section">
             
             <div class="sectionContainer">
-                <div class="setionContainerItem"> 
+                <div class="setionContainerItem" data-aos="fade-right" data-aos-duration="1500"> 
                     <h2>¿Qué es Restin?</h2>
                     <p class="parrafoSeccion">Somos una red de hospedajes diversa y en permanente expansión en la ciudad de Salta, Argentina. Estamos en una búsqueda constante por acercarte eso que necesitás en materia de alojamientos. <strong>Seas viajero o propietario, dejalo en manos de Restin. Nosotros nos encargamos.</strong></p>
                     <a href="./pages/quienes-somos.html" class="botonGlobal">Ver más...</a>
                 </div>
-                <div class="indexImgContainer setionContainerItem">
+                <div class="indexImgContainer setionContainerItem" data-aos="fade-left" data-aos-duration="1500">
                     <img src="./img/undraw_location_review_dmxd.png" alt="ilustración">
                 </div>
             </div>
@@ -92,19 +94,19 @@
 
         <section class="seccionContador section">            
             <div class="container py-5">
-                <div class="row">
+                <div class="row" data-aos="zoom-in" data-aos-duration="1500">
                     <h2>Los números nos avalan</h2>
                 </div>
                 <div class="row mt-0 mt-md-5">
-                    <div class="col-12 col-md-4 mt-3 mt-md-0">
+                    <div class="col-12 col-md-4 mt-3 mt-md-0" data-aos="fade-up" data-aos-duration="1500">
                         <p class="counter">50+</p>
                         <p class="counterInfo">plazas totales</p>
                     </div>
-                    <div class="col-12 col-md-4 mt-3 mt-md-0">
+                    <div class="col-12 col-md-4 mt-3 mt-md-0" data-aos="fade-up" data-aos-duration="1500">
                         <p class="counter">4</p>
                         <p class="counterInfo">ubicaciones diferentes</p>
                     </div>
-                    <div class="col-12 col-md-4 mt-3 mt-md-0">
+                    <div class="col-12 col-md-4 mt-3 mt-md-0" data-aos="fade-up" data-aos-duration="1500">
                         <p class="counter">5+</p>
                         <p class="counterInfo">años de experiencia</p>
                     </div>
@@ -114,15 +116,15 @@
         <!-- Seccion 4 - Info adicional y call to action   -->
         <section class="seccionIndex section">
             <div class="sectionContainer">
-                    <div class="indexImgContainer setionContainerItem">
+                    <div class="indexImgContainer setionContainerItem" data-aos="fade-right" data-aos-duration="1500">
                         <!-- Mapa o imagen de las distintas ubicaciones -->
                         <img src="./img/undraw_tourist_map_re_293e.png" alt="mapa">
                     </div>
-                    <div id="propuestasIndex" class="setionContainerItem">
+                    <div id="propuestasIndex" class="setionContainerItem" data-aos="fade-left" data-aos-duration="1500">
                         <h2>Una propuesta para cada necesidad</h2>
                         <p class="parrafoSeccion"> Lo nuestro es la excelencia en servicios de hospitalidad. Nuestra misión es encontrar siempre la pareja perfecta: para un viajero, cada visita a Salta es una experiencia única, y a su vez estamos convencidos de que cada alojamiento tiene algo único que ofrecer para hacer de esa experiencia algo inolvidable. <strong>Animate a conocernos.</strong></p>
                         <a href="./pages/publicar-propiedad.html" class="botonGlobal">Soy propietario</a>
-                        <a href="./pages/alojamientos.html" class="botonGlobal">Soy viajero</a>                     
+                        <a href="./pages/alojamientos.html" class="botonGlobal ms-lg-3">Soy viajero</a>                     
                     </div>     
             </div>
         </section>
@@ -151,5 +153,11 @@
     </footer>
     <!-- Script de Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!-- Script AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
 </body>
 </html>
