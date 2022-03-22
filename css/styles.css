@@ -252,6 +252,11 @@ footer {
 .footerSocial {
   text-align: right;
 }
+
+.footerSocial ul {
+  padding: 0;
+}
+
 .footerSocial ul li a i {
   transition: all ease-in-out 0.5s;
 }
