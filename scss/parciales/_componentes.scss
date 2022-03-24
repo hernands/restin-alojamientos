@@ -1,0 +1,82 @@
+/* Estilos globales>>>Botones y Formularios */
+.botonGlobal {
+  display: inline-block;
+  font-family: $tipografiaGlobal;
+  font-weight: bold;
+  font-size: 1rem;
+  background-color: $amarillo;
+  color: $grisOscuro;
+  border-radius: 5px;
+  border: 0;
+  cursor: pointer;
+  padding: 15px 20px;
+  text-decoration: none;
+  transition: ease-in 0.3s;
+  &:hover {
+    background-color: $amarilloHover;
+    color: $grisOscuro;
+  }
+}
+
+.botonFormularios {
+  margin-top: 1rem;
+}
+
+.formularioFullWidth {
+  display: inline-block;
+  max-width: 80%;
+  margin-bottom: 1rem;
+
+  label,
+  input,
+  textarea,
+  select,
+  option {
+    display: block;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+
+  label,
+  input,
+  select,
+  option {
+    height: 3rem;
+    text-transform: uppercase;
+  }
+
+  label {
+    margin-top: 2rem;
+  }
+
+  input {
+    margin-bottom: 1rem;
+  }
+
+  h2 {
+    margin-bottom: 4rem;
+  }
+
+  select {
+    text-indent: 45%;
+  }
+
+  button {
+    background-color: $grisBackground;
+    color: $blanco;
+    margin: 3rem 0;
+    display: block;
+    width: 100%;
+  }
+}
+
+/* Estilos globales >>> tarjetas */
+
+.fichaServicio:hover,
+.tarjetaAlojamiento:hover {
+  transform: scale(1.05);
+}
+
+/* Fin de Estilos globales */

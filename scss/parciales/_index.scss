@@ -1,0 +1,101 @@
+/* Estilos de index.html */
+.titleHighlight {
+  /* Animacion titulo index */
+  animation-name: color_animado;
+  animation-iteration-count: 1;
+  animation-duration: 4s;
+  color: $amarillo;
+}
+
+@keyframes color_animado {
+  0% {
+    color: $blanco;
+  }
+  30% {
+    color: $blanco;
+  }
+  100% {
+    color: $amarillo;
+  }
+}
+
+.bloqueContenido {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 80%;
+}
+
+.sectionContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.seccionIndex .botonGlobal {
+  margin: 1rem 0;
+}
+
+.seccionContador {
+  background-color: $grisBackground;
+  color: $blanco;
+  text-align: center;
+
+  ul {
+    list-style: none;
+
+    li {
+      display: inline-block;
+      margin: 1.5rem;
+    }
+  }
+}
+
+.counter {
+  font-weight: bold;
+  font-size: 4rem;
+}
+
+.counterInfo {
+  font-size: 1.5rem;
+}
+
+.indexImgContainer {
+  width: 30vw;
+  margin: 0;
+
+  img {
+    width: 100%;
+  }
+}
+
+.sectionContainerItem {
+  max-width: 40%;
+}
+
+.formularioIndex {
+  display: inline-block;
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 5px;
+
+  h3 {
+    margin-bottom: 1rem;
+  }
+
+  label,
+  input {
+    display: block;
+    width: 100%;
+  }
+
+  label {
+    margin-top: 1rem;
+  }
+
+  input {
+    margin-bottom: 0.3rem;
+  }
+}
+
+/* Fin de estilos de index.html */

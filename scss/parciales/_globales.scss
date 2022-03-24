@@ -1,0 +1,45 @@
+/* Reset CSS */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos globales (header, footer, tipografía, botones, etc.) */
+
+body {
+  font-family: $tipografiaGlobal;
+  color: $grisOscuro;
+}
+
+/* Estilos globales>>>Titulos */
+
+h1 {
+  font-size: 4rem;
+  margin: 3rem 0;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin: 2rem 0;
+}
+
+.containerH1 {
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Estilos globales >>> Secciones */
+.section {
+  padding: 3rem;
+}
+
+.fullWidthSection {
+  background-color: $amarillo;
+  text-align: center;
+}

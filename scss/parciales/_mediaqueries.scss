@@ -1,0 +1,98 @@
+/* RESPONSIVE - MEDIA QUERIES */
+
+/* TABLET */
+
+@media screen and (max-width: 992px) {
+  /* GLOBAL */
+  .flexHeader {
+    flex-direction: column;
+  }
+
+  .menu {
+    text-align: center;
+  }
+
+  .headerIndex {
+    height: auto;
+  }
+
+  .bloqueContenido {
+    margin-top: 4rem;
+  }
+
+  h1 {
+    font-size: 3rem;
+    padding: 2rem;
+  }
+
+  /* INDEX */
+  .seccionContador ul {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+    li {
+      display: inline-block;
+    }
+  }
+
+  /* SUMA TU ALOJAMIENTO */
+  .containerServicios {
+    flex-direction: column;
+  }
+  .fichaServicio {
+    width: 80%;
+    justify-content: space-evenly;
+    text-align: center;
+  }
+
+  /* CONTACTO */
+
+  .formularioContacto {
+    width: 100%;
+  }
+}
+
+/* MOVIL */
+
+@media screen and (max-width: 768px) {
+  /* GLOBAL */
+  h1 {
+    text-align: center;
+  }
+
+  .bloqueContenido {
+    flex-direction: column;
+    margin-top: 0;
+  }
+
+  .flexFooter {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footerSocial {
+    text-align: center;
+
+    ul {
+      margin-top: 1rem;
+    }
+  }
+
+  .copyright {
+    margin-top: 1rem;
+  }
+
+  /* INDEX */
+  .sectionContainer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .sectionContainerItem,
+  .indexImgContainer,
+  .indexImgContainer img {
+    max-width: 100%;
+    width: 100%;
+  }
+}

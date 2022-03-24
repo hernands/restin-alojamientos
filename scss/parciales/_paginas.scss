@@ -1,0 +1,158 @@
+/* Estilos de páginas internas */
+
+/* Estilos páginas internas >>> "quienes somos" */
+
+#parrafoQuienesSomos {
+  font-size: 1.3rem;
+  display: block;
+  text-align: center;
+  margin: 1rem auto;
+}
+
+#saltaPanoramica {
+  display: block;
+  margin: 3rem auto;
+  width: 100%;
+}
+
+/* Estilos de páginas internas >>> Alojamientos */
+
+.tarjetaAlojamiento {
+  background-color: $grisBackground;
+  color: $blanco;
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  margin: 1rem;
+  transition: ease 0.3s;
+
+  h5 {
+    font-weight: bold;
+  }
+}
+
+.tituloTarjeta {
+  margin-top: 1rem;
+}
+
+.listaTarjeta {
+  text-align: left;
+}
+
+.imagenTarjeta {
+  display: block;
+  width: 100%;
+  height: 40%;
+  object-fit: cover;
+}
+
+.botonTarjeta {
+  padding: 0.8rem;
+}
+
+/*  Estilos de páginas internas - Sumá tu alojamiento */
+
+.containerServicios {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.fichaServicio {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 25vw;
+  min-height: 70vh;
+  margin: 1rem;
+  padding: 2rem;
+  border: 2px solid $amarillo;
+  border-radius: 10px;
+  transition: ease 0.3s;
+
+  img {
+    display: block;
+    width: 100%;
+  }
+}
+
+/* Estilos de páginas internas - Contacto */
+
+#contactChannels {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.listaContacto {
+  list-style: none;
+
+  li {
+    margin-bottom: 5rem;
+  }
+
+  a {
+    color: $grisOscuro;
+    margin-left: 15px;
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+
+  i {
+    color: $amarillo;
+    font-size: 1.5rem;
+  }
+}
+
+.listaContacto,
+.listaIconos {
+  padding-left: 0;
+}
+
+.listaIconos {
+  list-style: none;
+  margin-top: 3rem;
+
+  li {
+    display: inline;
+
+    a {
+      color: $grisBackground;
+      font-size: 2rem;
+      margin-right: 30px;
+
+      i {
+        transition: ease-in-out 0.3s;
+      }
+    }
+  }
+}
+
+.formularioContacto {
+  display: block;
+  width: 80%;
+  padding: 2rem;
+  background-color: $grisBackground;
+  color: $blanco;
+  border-radius: 5px;
+
+  label,
+  input,
+  button,
+  textarea {
+    display: block;
+    width: 100%;
+  }
+
+  label {
+    margin-top: 1rem;
+  }
+
+  input {
+    margin-bottom: 0.3rem;
+  }
+}
+
+/*  Fin de estilos de páginas internas */
