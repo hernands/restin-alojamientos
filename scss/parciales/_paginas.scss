@@ -18,8 +18,7 @@
 /* Estilos de páginas internas >>> Alojamientos */
 
 .tarjetaAlojamiento {
-  background-color: $grisBackground;
-  color: $blanco;
+  color: map-get($paleta, blanco);
   border: none;
   border-radius: 10px;
   overflow: hidden;
@@ -68,7 +67,7 @@
   min-height: 70vh;
   margin: 1rem;
   padding: 2rem;
-  border: 2px solid $amarillo;
+  border: 2px solid map-get($paleta, amarillo);
   border-radius: 10px;
   transition: ease 0.3s;
 
@@ -94,14 +93,14 @@
   }
 
   a {
-    color: $grisOscuro;
+    color: map-get($paleta, grisOscuro);
     margin-left: 15px;
     font-weight: bold;
     font-size: 1.5rem;
   }
 
   i {
-    color: $amarillo;
+    color: map-get($paleta, amarillo);
     font-size: 1.5rem;
   }
 }
@@ -119,7 +118,7 @@
     display: inline;
 
     a {
-      color: $grisBackground;
+      color: map-get($paleta, grisbg);
       font-size: 2rem;
       margin-right: 30px;
 
@@ -134,8 +133,7 @@
   display: block;
   width: 80%;
   padding: 2rem;
-  background-color: $grisBackground;
-  color: $blanco;
+  color: map-get($paleta, blanco);
   border-radius: 5px;
 
   label,

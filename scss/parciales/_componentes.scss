@@ -4,8 +4,7 @@
   font-family: $tipografiaGlobal;
   font-weight: bold;
   font-size: 1rem;
-  background-color: $amarillo;
-  color: $grisOscuro;
+  color: map-get($paleta, grisOscuro);
   border-radius: 5px;
   border: 0;
   cursor: pointer;
@@ -13,8 +12,8 @@
   text-decoration: none;
   transition: ease-in 0.3s;
   &:hover {
-    background-color: $amarilloHover;
-    color: $grisOscuro;
+    background-color: map-get($paleta, amarilloHover);
+    color: map-get($paleta, grisOscuro);
   }
 }
 
@@ -64,19 +63,11 @@
   }
 
   button {
-    background-color: $grisBackground;
-    color: $blanco;
+    color: map-get($paleta, blanco);
     margin: 3rem 0;
     display: block;
     width: 100%;
   }
-}
-
-/* Estilos globales >>> tarjetas */
-
-.fichaServicio:hover,
-.tarjetaAlojamiento:hover {
-  transform: scale(1.05);
 }
 
 /* Fin de Estilos globales */

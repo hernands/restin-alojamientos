@@ -6,11 +6,19 @@
   box-sizing: border-box;
 }
 
+/* Estilos globales>>>Fondos */
+// Loop para crear una clase  reutilizable para cada background color de nuestro mapa
+@each $color, $valor in $paleta {
+  .fondo-#{$color} {
+    background-color: $valor;
+  }
+}
+
 /* Estilos globales (header, footer, tipografía, botones, etc.) */
 
 body {
   font-family: $tipografiaGlobal;
-  color: $grisOscuro;
+  color: map-get($paleta, grisOscuro);
 }
 
 /* Estilos globales>>>Titulos */
@@ -39,7 +47,9 @@ h2 {
   padding: 3rem;
 }
 
-.fullWidthSection {
-  background-color: $amarillo;
-  text-align: center;
+/* Estilos globales >>> tarjetas */
+
+.fichaServicio:hover,
+.tarjetaAlojamiento:hover {
+  transform: scale(1.05);
 }

@@ -1,7 +1,6 @@
 /* Estilos FOOTER */
 footer {
-  background-color: $grisBackground;
-  color: $blanco;
+  color: map-get($paleta, blanco);
   padding: 3rem;
 }
 
@@ -16,7 +15,7 @@ footer {
     transition: all ease-in-out 0.5s;
     &:hover,
     .listaIconos li a i:hover {
-      color: $amarillo;
+      color: map-get($paleta, amarillo);
       transform: scale(1.1);
     }
   }
@@ -29,7 +28,7 @@ footer ul {
     display: inline;
     margin-right: 0.5rem;
     a {
-      color: $blanco;
+      color: map-get($paleta, blanco);
     }
   }
 }

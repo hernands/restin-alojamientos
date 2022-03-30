@@ -5,6 +5,22 @@
   margin: 0;
   box-sizing: border-box; }
 
+/* Estilos globales>>>Fondos */
+.fondo-grisOscuro {
+  background-color: #555; }
+
+.fondo-amarilloHover {
+  background-color: #d0ac00; }
+
+.fondo-amarillo {
+  background-color: #ffdd18; }
+
+.fondo-grisbg {
+  background-color: #222; }
+
+.fondo-blanco {
+  background-color: #fff; }
+
 /* Estilos globales (header, footer, tipografía, botones, etc.) */
 body {
   font-family: "Red Hat Display", sans-serif;
@@ -31,9 +47,10 @@ h2 {
 .section {
   padding: 3rem; }
 
-.fullWidthSection {
-  background-color: #ffdd18;
-  text-align: center; }
+/* Estilos globales >>> tarjetas */
+.fichaServicio:hover,
+.tarjetaAlojamiento:hover {
+  transform: scale(1.05); }
 
 /* Estilos globales>>>Botones y Formularios */
 .botonGlobal {
@@ -41,7 +58,6 @@ h2 {
   font-family: "Red Hat Display", sans-serif;
   font-weight: bold;
   font-size: 1rem;
-  background-color: #ffdd18;
   color: #555;
   border-radius: 5px;
   border: 0;
@@ -85,16 +101,10 @@ h2 {
   .formularioFullWidth select {
     text-indent: 45%; }
   .formularioFullWidth button {
-    background-color: #222;
     color: #fff;
     margin: 3rem 0;
     display: block;
     width: 100%; }
-
-/* Estilos globales >>> tarjetas */
-.fichaServicio:hover,
-.tarjetaAlojamiento:hover {
-  transform: scale(1.05); }
 
 /* Fin de Estilos globales */
 /* Estilos Header */
@@ -182,7 +192,6 @@ h2 {
 /* Fin de estilos de Header */
 /* Estilos FOOTER */
 footer {
-  background-color: #222;
   color: #fff;
   padding: 3rem; }
 
@@ -249,7 +258,6 @@ footer ul {
   margin: 1rem 0; }
 
 .seccionContador {
-  background-color: #222;
   color: #fff;
   text-align: center; }
   .seccionContador ul {
@@ -306,7 +314,6 @@ footer ul {
 
 /* Estilos de páginas internas >>> Alojamientos */
 .tarjetaAlojamiento {
-  background-color: #222;
   color: #fff;
   border: none;
   border-radius: 10px;
@@ -393,7 +400,6 @@ footer ul {
   display: block;
   width: 80%;
   padding: 2rem;
-  background-color: #222;
   color: #fff;
   border-radius: 5px; }
   .formularioContacto label,

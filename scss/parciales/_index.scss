@@ -4,18 +4,18 @@
   animation-name: color_animado;
   animation-iteration-count: 1;
   animation-duration: 4s;
-  color: $amarillo;
+  color: map-get($paleta, amarillo);
 }
 
 @keyframes color_animado {
   0% {
-    color: $blanco;
+    color: map-get($paleta, blanco);
   }
   30% {
-    color: $blanco;
+    color: map-get($paleta, blanco);
   }
   100% {
-    color: $amarillo;
+    color: map-get($paleta, amarillo);
   }
 }
 
@@ -37,10 +37,8 @@
 }
 
 .seccionContador {
-  background-color: $grisBackground;
-  color: $blanco;
+  color: map-get($paleta, blanco);
   text-align: center;
-
   ul {
     list-style: none;
 
