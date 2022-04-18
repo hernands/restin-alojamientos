@@ -8,7 +8,8 @@
 
 /* Estilos globales>>>Fondos */
 // Loop para crear una clase  reutilizable para cada background color de nuestro mapa
-@each $color, $valor in $paleta {
+@each $color,
+$valor in $paleta {
   .fondo-#{$color} {
     background-color: $valor;
   }
@@ -30,7 +31,7 @@ h1 {
 }
 
 h2 {
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   margin: 2rem 0;
 }
 

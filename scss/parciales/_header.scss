@@ -24,7 +24,7 @@
   background-size: cover;
   background-attachment: fixed;
   color: map-get($paleta, blanco);
-  height: 70vh;
+  min-height: 70vh;
   padding: 4rem;
   padding-top: 1rem;
   display: flex;
@@ -43,6 +43,7 @@
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }

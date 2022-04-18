@@ -11,6 +11,7 @@
   padding: 15px 20px;
   text-decoration: none;
   transition: ease-in 0.3s;
+
   &:hover {
     background-color: map-get($paleta, amarilloHover);
     color: map-get($paleta, grisOscuro);
@@ -23,7 +24,7 @@
 
 .formularioFullWidth {
   display: inline-block;
-  max-width: 80%;
+  max-width: 50%;
   margin-bottom: 1rem;
 
   label,
@@ -59,7 +60,7 @@
   }
 
   select {
-    text-indent: 45%;
+    text-align: center;
   }
 
   button {

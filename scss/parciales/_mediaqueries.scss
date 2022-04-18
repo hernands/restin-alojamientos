@@ -3,6 +3,7 @@
 /* TABLET */
 
 @media screen and (max-width: 992px) {
+
   /* GLOBAL */
   .flexHeader {
     flex-direction: column;
@@ -25,6 +26,10 @@
     padding: 2rem;
   }
 
+  .formularioFullWidth {
+    max-width: 90%;
+  }
+
   /* INDEX */
   .seccionContador ul {
     display: flex;
@@ -40,8 +45,9 @@
   .containerServicios {
     flex-direction: column;
   }
+
   .fichaServicio {
-    width: 80%;
+    width: 100%;
     justify-content: space-evenly;
     text-align: center;
   }
@@ -53,12 +59,17 @@
   }
 }
 
-/* MOVIL */
+/* MOVILES ESTÁNDAR */
 
 @media screen and (max-width: 768px) {
+
   /* GLOBAL */
   h1 {
     text-align: center;
+  }
+
+  .section {
+    padding: 1rem;
   }
 
   .bloqueContenido {
@@ -95,4 +106,42 @@
     max-width: 100%;
     width: 100%;
   }
+
+  /* PAGINAS INTERNAS */
+  .parrafoQuienesSomos {
+    font-size: 1rem;
+  }
+
+}
+
+/*  MÓVILES MINI */
+
+@media screen and (max-width: 375px) {
+
+  /*GLOBALES*/
+  header nav div.container-fluid {
+    flex-direction: column;
+  }
+
+  .ocultarXS {
+    display: none;
+  }
+
+  /* PAGINAS INTERNAS*/
+  .tarjetaAlojamiento {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .fichaServicio {
+    padding: 1rem;
+  }
+
+  .listaContacto li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
 }

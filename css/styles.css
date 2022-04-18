@@ -33,7 +33,7 @@ h1 {
   font-weight: bold; }
 
 h2 {
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   margin: 2rem 0; }
 
 .containerH1 {
@@ -74,7 +74,7 @@ h2 {
 
 .formularioFullWidth {
   display: inline-block;
-  max-width: 80%;
+  max-width: 50%;
   margin-bottom: 1rem; }
   .formularioFullWidth label,
   .formularioFullWidth input,
@@ -99,7 +99,7 @@ h2 {
   .formularioFullWidth h2 {
     margin-bottom: 4rem; }
   .formularioFullWidth select {
-    text-indent: 45%; }
+    text-align: center; }
   .formularioFullWidth button {
     color: #fff;
     margin: 3rem 0;
@@ -131,7 +131,7 @@ h2 {
   background-size: cover;
   background-attachment: fixed;
   color: #fff;
-  height: 70vh;
+  min-height: 70vh;
   padding: 4rem;
   padding-top: 1rem;
   display: flex;
@@ -301,7 +301,8 @@ footer ul {
 /* Fin de estilos de index.html */
 /* Estilos de páginas internas */
 /* Estilos páginas internas >>> "quienes somos" */
-#parrafoQuienesSomos {
+.parrafoQuienesSomos {
+  font-weight: bold;
   font-size: 1.3rem;
   display: block;
   text-align: center;
@@ -429,6 +430,8 @@ footer ul {
   h1 {
     font-size: 3rem;
     padding: 2rem; }
+  .formularioFullWidth {
+    max-width: 90%; }
   /* INDEX */
   .seccionContador ul {
     display: flex;
@@ -440,18 +443,20 @@ footer ul {
   .containerServicios {
     flex-direction: column; }
   .fichaServicio {
-    width: 80%;
+    width: 100%;
     justify-content: space-evenly;
     text-align: center; }
   /* CONTACTO */
   .formularioContacto {
     width: 100%; } }
 
-/* MOVIL */
+/* MOVILES ESTÁNDAR */
 @media screen and (max-width: 768px) {
   /* GLOBAL */
   h1 {
     text-align: center; }
+  .section {
+    padding: 1rem; }
   .bloqueContenido {
     flex-direction: column;
     margin-top: 0; }
@@ -472,4 +477,25 @@ footer ul {
   .indexImgContainer,
   .indexImgContainer img {
     max-width: 100%;
-    width: 100%; } }
+    width: 100%; }
+  /* PAGINAS INTERNAS */
+  .parrafoQuienesSomos {
+    font-size: 1rem; } }
+
+/*  MÓVILES MINI */
+@media screen and (max-width: 375px) {
+  /*GLOBALES*/
+  header nav div.container-fluid {
+    flex-direction: column; }
+  .ocultarXS {
+    display: none; }
+  /* PAGINAS INTERNAS*/
+  .tarjetaAlojamiento {
+    margin-left: 0;
+    margin-right: 0; }
+  .fichaServicio {
+    padding: 1rem; }
+  .listaContacto li {
+    display: flex;
+    flex-direction: column;
+    align-items: center; } }
